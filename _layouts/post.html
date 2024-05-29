@@ -2,10 +2,11 @@
 layout: default
 ---
 
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
 <h1>{{ page.title }}</h1>
-
-<p class="view">by <strong>{{ page.author | default: site.author }}</strong></p>
+<small>Date: <em>{{ page.date | date: "%-d %b %Y %H:%M" }}</em></small>
+{% if page.tags %}
+<small>| Tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
 
 {{content}}
 
