@@ -3,15 +3,18 @@ layout: post
 title:  "How to setup GitHub Pages"
 date:   2021-08-29 01:11:49 +0200
 author: 0xUnicorn
-tags: Jekyll GitHub 
+tags: Jekyll GitHub
 ---
 
-![GitHub Pages](../assets/img/github-pages.png)
+![GitHub Pages](../assets/img/github-pages.png){:.post-cover-image}
+
 When you need a place to express your thoughts, feelings or technical doings a blog is a nice solution.
 
 If you want a "drag/drop" solution, there's a lot of solutions out there now a days, but if you want a quick site with some simple markdown language, [GitHub Pages](https://pages.github.com) is a really good solution.
 
 Setting up GitHub Pages is very fast and easy. If you want a more customized layout, it can take some time to get everything to fit nicely though.
+
+<!--excerpt-->
 
 # Simple page
 
