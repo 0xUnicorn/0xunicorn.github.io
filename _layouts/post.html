@@ -2,14 +2,24 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-<small>Date: <em>{{ page.date | date: "%-d %b %Y %H:%M" }}</em></small>
-{% if page.tags %}
-<small>| Tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+<article class="post">
+  <section id="header">
+    <div class="post-cover-image">
+      <img src="{{ '/assets/img/' | append: page.image | relative_url }}"
+          alt="{{ page.image_alt }}" />
+    </div>
 
-{{content}}
 
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+    <h1>{{ page.title }}</h1>
+    <p><small><b>Date: </b><em>{{ page.date | date: "%-d %b %Y %H:%M" }}</em></small></p>
+    {% if page.tags %}
+    <p><small><b>Tags: </b><em>{{ page.tags | join: "</em>, <em>" }}</em></small></p>
+    {% endif %}
+    <hr/>
+  </section>
+
+  <section id="content">
+  {{content}}
+  </section>
+
+</article>

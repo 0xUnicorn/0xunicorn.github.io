@@ -3,10 +3,10 @@ layout: post
 title:  "How to setup GitHub Pages"
 date:   2021-08-29 01:11:49 +0200
 author: 0xUnicorn
+image: "github-pages.png"
+image_alt: "Screenshot of jekyll website"
 tags: Jekyll GitHub
 ---
-
-![GitHub Pages](../assets/img/github-pages.png){:.post-cover-image}
 
 When you need a place to express your thoughts, feelings or technical doings a blog is a nice solution.
 

@@ -7,10 +7,12 @@ title: Blog
   {% for post in site.posts %}
   <article class="post">
     <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <small>Date: <em>{{ post.date | date: "%-d %b %Y %H:%M" }}</em></small>
+    <div class="post-metadata">
+    <p><small><b>Date: </b><em>{{ post.date | date: "%-d %b %Y %H:%M" }}</em></small></p>
     {% if post.tags %}
-    <small>| Tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
+    <p><small><b>Tags: </b><em>{{ post.tags | join: "</em>, <em>" }}</em></small></p>
     {% endif %}
+    </div>
     <div class="entry">
       {{ post.excerpt }}
     </div>
