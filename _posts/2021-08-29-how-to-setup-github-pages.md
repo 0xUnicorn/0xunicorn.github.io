@@ -14,8 +14,6 @@ If you want a "drag/drop" solution, there's a lot of solutions out there now a d
 
 Setting up GitHub Pages is very fast and easy. If you want a more customized layout, it can take some time to get everything to fit nicely though.
 
-<!--excerpt-->
-
 # Simple page
 
 If you just want a simple page with no or very little customization to the layout. Follow the few very simple steps on the [GitHub Pages site](https://pages.github.com)

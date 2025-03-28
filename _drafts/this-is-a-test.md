@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "This is a draft test"
-author: 0xUnicorn
+title:  "Template"
+date:   2025-03-28
+author: Unicorn
 tags: Jekyll GitHub
 ---
 

@@ -4,19 +4,25 @@ title: Blog
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
-  <article class="post">
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <small>Date: <em>{{ post.date | date: "%-d %b %Y %H:%M" }}</em></small>
-    {% if post.tags %}
-    <small>| Tags: <em>{{ post.tags | join: "</em> - <em>" }}</em></small>
-    {% endif %}
-    <div class="entry">
-      {{ post.excerpt }}
-    </div>
 
-    <a href="{{ post.url }}" class="read-more">Read More</a>
+  {% for post in site.posts %}
+
+  <article class="post">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+    <p>
+        <small>Date: <em>{{ post.date | date_to_string }}</em></small><br>
+        <small><b>Tags:</b>
+        {% if post.tags %}
+        <em>{{ post.tags | join: "</em>, <em>" }}</em>
+        {% endif %}
+        </small>
+    </p>
+
   </article>
+
   <hr/>
+
   {% endfor %}
+
 </div>
