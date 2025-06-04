@@ -28,6 +28,7 @@ title: Unicorn
 url: "https://0xunicorn.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
+repository: "0xUnicorn/0xunicorn.github.io"
 
 # Build settings
 remote_theme: pages-themes/architect@v0.2.0
