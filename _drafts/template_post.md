@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Template"
-date:   2025-03-28
+title:  "Template post"
+date:   1970-01-01
 author: Unicorn
-tags: Jekyll GitHub
+tags: Template
 ---
 
 ![GitHub Pages](../assets/img/github-pages.png){:.post-cover-image}
@@ -11,6 +11,4 @@ tags: Jekyll GitHub
 # THIS IS A DRAFT!
 
 __When you need a place to express your thoughts, feelings or technical doings a blog is a nice solution.__
-
-<!--excerpt-->
 
