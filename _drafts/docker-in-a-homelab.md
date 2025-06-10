@@ -3,7 +3,7 @@ layout: post
 title:  "Docker in a homelab"
 date:   2025-06-06
 author: Unicorn
-tags: Docker Homelab QEMU/MVK
+tags: Docker Homelab QEMU/KVM
 ---
 
 I have been running a homelab since 2016, with many changes through out the years.
