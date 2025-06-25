@@ -7,13 +7,12 @@ tags: Docker Homelab QEMU/KVM
 ---
 
 I have been running a homelab since 2016, with many changes through out the years.
-At the moment my server is running on an older workstation with an ASUS B550-E gaming motherboard, with an AMD Ryzen 3900X CPU and 128GB DDR4 ECC Memory.
 
 A couple of years back I changed my VM's to run the same structure:
 
 - Applications run in docker containers
 - Access to applications are being served through a reverse nginx proxy
-- Except for database services (postgresql)
+- With some exceptions e.g database services (postgresql)
 
 This setup has been very smooth for the past years, but I have one server which has reached its storage limit.
 
@@ -74,6 +73,5 @@ So one of the reasons for creating a new monitor server besides the storage issu
 One of the primary reasons for the misplacement of the `monitor2` server, was the Loki service. It required that my promtail agent(s) would be able to push logs to Loki.
 Before running Loki, the only reason for clients connecting to the monitor server, would be for accessing Grafana dashboards.
 
-But since my log collecting is happening in a logging server with `promtail` and `syslog-ng`, having Loki running next to it, makes sense.
-
+But since my log collecting is happening in a logging server with `promtail` and `syslog-ng`, having Loki running next to it, makes perfect sense.
 
