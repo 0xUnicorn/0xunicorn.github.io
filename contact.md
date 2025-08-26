@@ -39,6 +39,7 @@ pub   ed25519/DE0D713876304814 2025-08-21 [SC] [expires: 2035-08-19]
       361A8864EB10A71DAA125BC6DE0D713876304814
 uid                 [ultimate] Christian Henriksen <unicorn@0xunicorn.com>
 uid                 [ultimate] Christian Henriksen <unicorn@bornhack.org>
+uid                 [ultimate] Christian Henriksen <ch@cybermonkey.dk>
 sub   cv25519/E4315CC53AA84F5A 2025-08-21 [E] [expires: 2035-08-19]
 ```
 
