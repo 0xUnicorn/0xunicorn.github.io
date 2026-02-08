@@ -14,7 +14,7 @@ find most appealing.
 
 ## IRC
 
-- **OFTC:** OxUnicorn
+- **OFTC:** unicorn
 - **Baconsvin:** unicorn
 - **Libera:** unicorn
 - **Hackint:** unicorn

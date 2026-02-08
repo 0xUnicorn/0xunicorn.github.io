@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "Template post"
+title:  "Headline"
 date:   1970-01-01
 author: Unicorn
-tags: Template
+tags: template
 ---
-
-# THIS IS A DRAFT!
 
 __When you need a place to express your thoughts, feelings or technical doings a blog is a nice solution.__
 
