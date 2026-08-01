@@ -19,7 +19,11 @@ But after testing and validating all components used: `Nginx`, `Redis`, `Postgre
 Looking at the time this became an issue it occured to me, it was the same time I disabled internet connectivity for this server.
 So re-enabling internet connectivity verified what caused the issue, now I needed to figure out why it was requiring internet access.
 
-## RELEASE_CHECK_URL
+## Surprise
+
+So as I wrote the below section I thought the issue was resolved as the response times went back to normal after setting that environment variable, but that wasn't the case.
+
+### RELEASE_CHECK_URL
 
 According to the docs this is disabled by default `Default: None (disabled)` [Docs: release_check_url](https://netboxlabs.com/docs/netbox/configuration/miscellaneous/#release_check_url).
 
@@ -29,4 +33,11 @@ But for some reason it was default enabled in the `env/netbox.env` file in the `
 
 So setting this to `RELEASE_CHECK_URL=None` in the `docker-compose.yml` fixed the issue and I can now disable internet connectivity yet again,
 without slow response times from Netbox
+
+## Solution
+
+After spending quite some time and a [reddit thread](https://www.reddit.com/r/Netbox/comments/1vcv8cl/why_is_netbox_trying_to_connect_to_aws/) I discovered the SNI in the requests was `api.netbox.oss.netboxlabs.com`,
+which is being used for showing some news feed on the dashboard.
+
+In the quest of finding a way to disable this I found [ISOLATED_DEPLOYMENT](https://netboxlabs.com/docs/netbox/configuration/system/#isolated_deployment) which basically does what I needed.
 
